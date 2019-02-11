@@ -1,4 +1,7 @@
 <h2>レシピ検索システム</h2>
+検索：
+ <input #keyword size= "20" [value]=getCurrentValue()/>
+ <button (click)="searchRecipe(keyword.value)">Search</button>
 <table>
   <tr>
     <th>名前</th><th>所用時間</th><th>ひとこと</th><th>主な材料</th>
